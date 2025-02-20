@@ -91,7 +91,9 @@
             Tu navegador no soporta videos en HTML5.
         </video>
     </div>
-    
+    <audio id="miAudio">
+        <source src="https://github.com/Abrahamcitop05/name/blob/main/happy%20happy%20happy.mp3" type="audio/mpeg">
+        </audio>
     <div class="contenedor">
         <div class="titulo">
             <h1>¿Me perdonas?</h1>
@@ -104,7 +106,7 @@
             <h2>¡Gracias! ^^ </h2>
         </div>
     </div>
-
+    
     <script>
         $(document).ready(function(){
             $(".p1").hover(function(){
@@ -128,9 +130,9 @@
             document.body.style.backgroundSize = "cover"; // Asegura que la imagen cubra toda la pantalla
             document.body.style.backgroundPosition = "center"; // Centra la imagen
              // Reproducir el audio
-            let audio = new Audio('https://github.com/Abrahamcitop05/name/blob/main/happy%20happy%20happy.mp3'); 
-            audio.play();
-            }      
+                // Reproducir el audio desde el elemento <audio>
+                let audio = document.getElementById("miAudio");
+                audio.play();
     
     </script>
 </body>
